@@ -17,14 +17,16 @@
       (.setType "k8s_container")
       (.putAllLabels {"project_id",
                       project_id
-                      #_"cluster_name"
-                      #_(System/getenv "CLUSTER_NAME")
+                      "cluster_name"
+                      (System/getenv "CLUSTER_NAME")
                       "namespace_name"
                       (System/getenv "POD_NAMESPACE")
                       "pod_name"
                       (System/getenv "HOSTNAME")
                       "container_name"
-                      (System/getenv "CONTAINER_NAME")})
+                      (System/getenv "CONTAINER_NAME")
+                      "location"
+                      (System/getenv "LOCATION")})
       (.build)))
 
 (defn make-monitored-resource [project_id]
