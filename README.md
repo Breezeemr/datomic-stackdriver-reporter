@@ -14,7 +14,4 @@ events will be tagged "datomic", and start with "datomic". Event names come
 from the metrics available on http://docs.datomic.com/monitoring.html.
 
 ## License
-
-Copyright © 2015 Canary Computer Corporation
-
 Distributed under the Apache License version 2.0
