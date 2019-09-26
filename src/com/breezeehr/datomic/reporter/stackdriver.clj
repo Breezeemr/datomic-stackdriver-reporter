@@ -26,7 +26,7 @@
                       "container_name"
                       (System/getenv "CONTAINER_NAME")
                       "location"
-                      "google-cloud"})
+                      (System/getenv "LOCATION")})
       (.build)))
 
 (defn make-monitored-resource [project_id]
