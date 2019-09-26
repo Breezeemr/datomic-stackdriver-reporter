@@ -6,10 +6,12 @@
   :dependencies [[com.google.cloud/google-cloud-monitoring "1.90.0"]]
   :profiles
   {:provided
-         {:dependencies
-          [[org.clojure/clojure "1.10.1"]
-           #_[javax.xml.bind/jaxb-api "2.3.1"]
-           #_[com.sun.xml.bind/jaxb-core "2.3.0"]
-           #_[com.sun.xml.bind/jaxb-impl "2.3.1"]
-           ]}
-   :test {:plugins [[lein-test-out "0.3.1"]]}})
+   {:dependencies
+    [[org.clojure/clojure "1.10.1"]
+
+     #_[javax.xml.bind/jaxb-api "2.3.1"]
+     #_[com.sun.xml.bind/jaxb-core "2.3.0"]
+     #_[com.sun.xml.bind/jaxb-impl "2.3.1"]
+     ]}
+   :uberjar
+   {:uberjar-name "stackdriver-reporter.jar"}})
